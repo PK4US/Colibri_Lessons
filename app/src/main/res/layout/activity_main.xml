@@ -8,11 +8,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/UserImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@tools:sample/avatars"/>
 
     <TextView
         android:id="@+id/UserNameTextView"
@@ -75,7 +75,7 @@
         android:layout_marginStart="20dp"
         style="@style/TextView.Primary.Bold"
         android:layout_marginTop="@dimen/text_small_margin"
-        android:text="27" />
+        android:text="4" />
 
     <TextView
         android:id="@+id/UserFollowersTextView"
