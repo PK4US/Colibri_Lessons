@@ -1,11 +1,9 @@
 package com.pk4u.colibri_lessons;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.pk4u.colibri_lessons.pojo.User;
 import com.squareup.picasso.Picasso;
 
@@ -31,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         locationTextView = findViewById(R.id.userLocationTextView);
         followingTextView = findViewById(R.id.userFollowingCountTextView);
         followersTextView = findViewById(R.id.userFollowersCountTextView);
-
-
 
         loadUserInfo();
     }
