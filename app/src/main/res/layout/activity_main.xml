@@ -17,56 +17,45 @@
     <TextView
         android:id="@+id/UserNameTextView"
         android:layout_below="@+id/UserImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:textSize="16dp"
+        style="@style/TextView.Primary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="Имя" />
 
     <TextView
         android:id="@+id/UserNickTextView"
-        android:layout_width="wrap_content"
         android:layout_below="@+id/UserNameTextView"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:textSize="16dp"
+        style="@style/TextView.Secondary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="Ник" />
+
     <TextView
         android:id="@+id/UserDescriptionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/UserNickTextView"
-        android:layout_marginTop="5dp"
-        android:textSize="16dp"
+        style="@style/TextView.Primary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="Описание" />
+
     <TextView
         android:id="@+id/UserLocationTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/UserDescriptionTextView"
-        android:layout_marginTop="5dp"
-        android:textSize="16dp"
+        style="@style/TextView.Secondary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="Местоположение" />
 
     <TextView
         android:id="@+id/UserFollowingTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_below="@+id/UserLocationTextView"
-        android:textSize="16dp"
+        style="@style/TextView.Secondary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="@string/following_hint" />
 
     <TextView
         android:id="@+id/UserFollowersTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/UserFollowingTextView"
         android:layout_below="@+id/UserLocationTextView"
-        android:layout_marginStart="5dp"
-        android:textSize="16dp"
+        android:layout_marginStart="10dp"
+        style="@style/TextView.Secondary"
+        android:layout_marginTop="@dimen/text_small_margin"
         android:text="@string/followers_hint" />
-
 
 </RelativeLayout>
