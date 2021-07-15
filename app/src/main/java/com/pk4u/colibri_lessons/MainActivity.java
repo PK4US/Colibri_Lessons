@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        userImageView = findViewById(R.id.UserImageView);
+        userImageView = findViewById(R.id.userImageView);
         Picasso.with(this).load("http://i.imgur.com/DvpvklR.png").into(userImageView);
     }
 }
