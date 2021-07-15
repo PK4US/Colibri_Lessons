@@ -24,31 +24,24 @@ public class User {
     public long getId() {
         return id;
     }
-
     public String getImageUrl() {
         return imageUrl;
     }
-
     public String getName() {
         return name;
     }
-
     public String getNick() {
         return nick;
     }
-
     public String getDescription() {
         return description;
     }
-
     public String getLocation() {
         return location;
     }
-
     public int getFollowingCount() {
         return followingCount;
     }
-
     public int getFollowersCount() {
         return followersCount;
     }
