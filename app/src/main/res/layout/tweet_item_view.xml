@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/text_small_margin"
+        android:src="@mipmap/ic_launcher">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/authorNameTextView"
+        style="@style/TextView.Primary.Bold"
+        android:layout_toEndOf="@id/profileImageView"
+        android:text="Devcolibri" />
+
+    <TextView
+        android:id="@+id/authorNickTextView"
+        style="@style/TextView.Secondary"
+        android:layout_marginStart="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/authorNameTextView"
+        android:text="devcolibri" />
+
+    <TextView
+        android:id="@+id/authorDateTextView"
+        style="@style/TextView.Secondary"
+        android:layout_marginStart="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/authorNickTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Нояб. 27" />
+
+    <TextView
+        android:id="@+id/tweetContentTextView"
+        style="@style/TextView.Primary"
+        android:layout_below="@id/authorNameTextView"
+        android:layout_marginTop="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/profileImageView"
+        android:text="Сегодня поговорим о RecyclerView и о том, почему нужно использовать именно его" />
+
+    <ImageView
+        android:id="@+id/tweetImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/tweetContentTextView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/profileImageView"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
+    <LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweetImageView"
+        android:layout_toEndOf="@id/profileImageView"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/retweetsContainer"
+            style="@style/HalfWidth"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextIcon"
+                android:text="@string/fa_retweet"/>
+
+            <TextView
+                android:id="@+id/retweetsTextView"
+                style="@style/TextView.Secondary"
+                android:layout_marginStart="@dimen/text_small_margin"
+                android:text="16"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/likesContainer"
+            style="@style/HalfWidth"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextIcon"
+                android:text="@string/fa_heart_o"/>
+
+            <TextView
+                android:id="@+id/likesTextView"
+                style="@style/TextView.Secondary"
+                android:layout_marginStart="@dimen/text_small_margin"
+                android:text="16"/>
+        </LinearLayout>
+    </LinearLayoutCompat>
+
+</RelativeLayout>

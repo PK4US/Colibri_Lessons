@@ -11,4 +11,6 @@
     <string name="loading_error_mag">Error during loading info</string>
 
     <string name="fa_map_marker"></string>
+    <string name="fa_heart_o"></string>
+    <string name="fa_retweet"></string>
 </resources>
