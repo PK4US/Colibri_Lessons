@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Colibri_Lessons</string>
+    <string name="following_hint">Читает</string>
+    <string name="followers_hint">Читатели</string>
+</resources>

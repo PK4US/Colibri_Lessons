@@ -1,0 +1,2 @@
+rootProject.name = "Colibri_Lessons"
+include ':app'
