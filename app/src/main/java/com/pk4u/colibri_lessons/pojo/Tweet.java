@@ -23,21 +23,27 @@ public class Tweet {
     public User getUser() {
         return user;
     }
+
     public Long getId() {
         return id;
     }
+
     public String getCreationDate() {
         return creationDate;
     }
+
     public String getText() {
         return text;
     }
+
     public Long getRetweetCount() {
         return retweetCount;
     }
+
     public Long getFavouriteCount() {
         return favouriteCount;
     }
+
     public String getImageUrl() {
         return imageUrl;
     }

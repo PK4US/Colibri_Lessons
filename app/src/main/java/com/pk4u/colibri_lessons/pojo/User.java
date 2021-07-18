@@ -10,7 +10,14 @@ public class User {
     private int followingCount;
     private int followersCount;
 
-    public User(long id, String imageUrl, String name, String nick, String description, String location, int followingCount, int followersCount) {
+    public User(long id,
+                String imageUrl,
+                String name,
+                String nick,
+                String description,
+                String location,
+                int followingCount,
+                int followersCount) {
         this.id = id;
         this.imageUrl = imageUrl;
         this.name = name;
@@ -24,24 +31,31 @@ public class User {
     public long getId() {
         return id;
     }
+
     public String getImageUrl() {
         return imageUrl;
     }
+
     public String getName() {
         return name;
     }
+
     public String getNick() {
         return nick;
     }
+
     public String getDescription() {
         return description;
     }
+
     public String getLocation() {
         return location;
     }
+
     public int getFollowingCount() {
         return followingCount;
     }
+
     public int getFollowersCount() {
         return followersCount;
     }
@@ -60,8 +74,9 @@ public class User {
             return false;
         if (!name.equals(user.name)) return false;
         if (!nick.equals(user.nick)) return false;
-        if (description != null ? !description.equals(user.description) : user.description != null)
+        if (description != null ? !description.equals(user.description) : user.description != null) {
             return false;
+        }
         return location != null ? location.equals(user.location) : user.location == null;
     }
 
