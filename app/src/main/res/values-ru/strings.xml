@@ -14,4 +14,9 @@
     <string name="fa_map_marker"></string>
     <string name="fa_heart_o"></string>
     <string name="fa_retweet"></string>
+
+    <string name="search_hint"></string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">uRJ8JebdrBVByRIUQoJgXOEOu</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">O7V535sxWcXPRXG9PFwg6y54c3T1t83oLbXTq0EVrRsrBoa4PL</string>
 </resources>
